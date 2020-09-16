@@ -93,4 +93,13 @@ void q_reverse(queue_t *q);
  */
 void q_sort(queue_t *q);
 
+/*
+ * Used for merge in merge sort.
+ */
+list_ele_t *merge(list_ele_t *l1, list_ele_t *l2);
+
+/*
+ * Used for split in merge sort.
+ */
+list_ele_t *mergeSortList(list_ele_t *head);
 #endif /* LAB0_QUEUE_H */

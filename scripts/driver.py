@@ -17,7 +17,6 @@ class Tracer:
     autograde = False
     useValgrind = False
     colored = False
-
     traceDict = {
         1: "trace-01-ops",
         2: "trace-02-ops",
@@ -57,7 +56,6 @@ class Tracer:
         16: "Trace-16",
         17: "Trace-17"
     }
-
     maxScores = [0, 6, 6, 6, 6, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 5]
 
     RED = '\033[91m'

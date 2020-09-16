@@ -1,22 +1,24 @@
-
-# Demonstration of queue testing framework
-# Use help command to see list of commands and options
-# Initial queue is NULL.
-show
-# Create empty queue
+# Test of insert_head, insert_tail, reverse, and remove_head
+option fail 0
+option malloc 0
 new
-# Fill it with some values.  First at the head
 ih dolphin
 ih bear
 ih gerbil
-# Now at the tail
+reverse
 it meerkat
 it bear
-# Reverse it
+it gerbil
 reverse
-# See how long it is
-size
-# Delete queue.  Goes back to a NULL queue.
-free
-# Exit program
-quit
+it squirrel
+reverse
+rh squirrel
+ih vulture
+reverse
+rh gerbil
+rh bear
+rh meerkat
+rh gerbil
+rh bear
+rh dolphin
+rh vulture
